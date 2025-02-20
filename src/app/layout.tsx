@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`${spaceGrotesk.variable} antialiased min-h-screen flex flex-col`}
       >
         <Header />
-        <main className="flex-grow container mx-auto px-6">
+        <main className="flex-grow container mx-auto px-6 pt-[100px] lg:pt-[250px]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="md:col-span-3">{children}</div>
           </div>
