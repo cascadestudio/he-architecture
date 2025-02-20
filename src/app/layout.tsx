@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-space-grotesk",
 });
