@@ -4,11 +4,13 @@ import { groq } from "next-sanity";
 import { notFound } from "next/navigation";
 
 interface ProjectProps {
-  params: { slug: string };
+  params: {
+    slug: string;
+  };
 }
 
 export default async function ProjectPage({ params }: ProjectProps) {
-  const { slug } = await params;
+  const { slug } = params;
 
   const query = groq`*[_type == "project" && slug.current == $slug][0]{
     title,
