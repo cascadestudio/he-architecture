@@ -7,10 +7,10 @@ export default defineType({
   fields: [
     defineField({
       name: "featured",
-      title: "Projet mis en avant",
+      title: "Projet phare",
       type: "boolean",
       description:
-        "Un seul projet peut être mis en avant sur la page d'accueil",
+        "Ce projet sera affiché en grand format sur la page d'accueil",
       validation: (Rule) =>
         Rule.custom((fieldValue, context) => {
           if (!fieldValue) return true;
