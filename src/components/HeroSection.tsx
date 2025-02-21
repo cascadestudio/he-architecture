@@ -8,9 +8,9 @@ export default function HeroSection({
   featuredProject: Project;
 }) {
   return (
-    <section className="h-screen lg:pt-7">
+    <section className="h-[calc(100vh-120px)] mb-24 lg:h-screen lg:pt-7">
       <Link href={`/project/${slug.current}`} className="h-full block">
-        <div className="relative h-[calc(100%-200px)] lg:h-[calc(100%-80px)]">
+        <div className="relative h-[calc(100%-70px)] lg:h-[calc(100%-85px)]">
           {mainImage && (
             <Image
               src={mainImage.asset.url}
