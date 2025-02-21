@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="container py-16 md:py-24">
+    <section className="container pb-64">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="relative aspect-[350/460] lg:aspect-[325/490] w-full">
           <Image
