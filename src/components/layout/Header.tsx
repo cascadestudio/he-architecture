@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Logo from "./logo/logo.svg";
 import Image from "next/image";
+
 export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 p-5 lg:p-7 z-50">
@@ -11,7 +11,7 @@ export default function Header() {
             className="w-full flex justify-between items-center lg:w-auto lg:flex-col"
           >
             <Image
-              src={Logo}
+              src="/logo.svg"
               alt="HE Architecture"
               width={100}
               height={100}
