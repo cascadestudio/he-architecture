@@ -19,7 +19,7 @@ export default function ClientLayout({
   return (
     <>
       <Header />
-      <main className="flex-grow container mx-auto px-5 pt-[120px] lg:pt-0">
+      <main className="px-5 pt-[120px] lg:pt-0 lg:px-0 lg:mx-52">
         <div className="grid grid-cols-1 lg:grid-cols-3">
           <div className="lg:col-span-3">{children}</div>
         </div>
