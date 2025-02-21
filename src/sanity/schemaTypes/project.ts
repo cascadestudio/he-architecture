@@ -6,6 +6,28 @@ export default defineType({
   type: "document",
   fields: [
     defineField({
+      name: "featured",
+      title: "Projet mis en avant",
+      type: "boolean",
+      description:
+        "Un seul projet peut être mis en avant sur la page d'accueil",
+      validation: (Rule) =>
+        Rule.custom((fieldValue, context) => {
+          if (!fieldValue) return true;
+
+          return context
+            .getClient({ apiVersion: "2024-03-20" })
+            .fetch(`*[_type == "project" && featured == true && _id != $id]`, {
+              id: (context.document as any)._id,
+            })
+            .then(
+              (documents) =>
+                documents.length === 0 ||
+                "Un seul projet peut être mis en avant"
+            );
+        }),
+    }),
+    defineField({
       name: "mainImage",
       title: "Image principale",
       type: "image",
