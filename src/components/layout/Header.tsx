@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 p-5 bg-[var(--background)] lg:bg-transparent lg:p-7 z-50">
+    <header className="fixed top-0 left-0 right-0 p-5 bg-[var(--background)] lg:bg-transparent lg:px-0 lg:py-7 z-50">
       <nav>
         <div className="flex justify-between items-center lg:items-start">
           <Link
             href="/"
-            className="w-full flex justify-between items-center lg:w-auto lg:flex-col"
+            className="w-full flex justify-between items-center lg:w-auto lg:flex-col lg:mx-[15px]"
           >
             <Image
               src="/logo.svg"
@@ -26,7 +26,7 @@ export default function Header() {
               </p>
             </div>
           </Link>
-          <div className="hidden lg:block">
+          <div className="hidden lg:block lg:mr-[60px]">
             <Link href="/contact" className="text-2xl font-bold">
               Contact
             </Link>
