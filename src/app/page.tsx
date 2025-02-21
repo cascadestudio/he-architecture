@@ -1,8 +1,5 @@
 import { client } from "@/sanity/lib/client";
 import { PROJECTS_QUERY, FEATURED_PROJECT_QUERY } from "@/sanity/lib/queries";
-import { Project } from "@/types/project";
-import Link from "next/link";
-import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
 import ProjectsSection from "@/components/ProjectsSection";
 
