@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 p-5 lg:p-7 z-50">
+    <header className="fixed top-0 left-0 right-0 p-5 bg-[var(--background)] lg:bg-transparent lg:p-7 z-50">
       <nav>
         <div className="flex justify-between items-center lg:items-start">
           <Link
@@ -17,7 +17,7 @@ export default function Header() {
               height={100}
               className="w-[80px] lg:w-[100px] h-auto lg:mb-11"
             />
-            <div className="text-end lg:text-center lg:max-w-[170px]">
+            <div className="text-end lg:text-center lg:max-w-[170px] flex-shrink-0">
               <h1 className="text-2xl font-bold mb-1.5 lg:mb-3">
                 HE Architecture
               </h1>

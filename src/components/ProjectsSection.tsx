@@ -1,25 +1,31 @@
 import { Project } from "@/types/project";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProjectsSection({ projects }: { projects: Project[] }) {
   return (
-    <section className="mt-16">
-      <h2 className="text-3xl font-bold">
-        <Link href="/projects">
-          <a>Projects</a>
-        </Link>
-      </h2>
-      <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
-          <li key={project.slug.current}>
-            <Link href={`/projects/${project.slug.current}`}>
-              <a>
-                <h3 className="text-2xl font-bold">{project.title}</h3>
-              </a>
-            </Link>
-          </li>
+          <Link
+            href={`/project/${project.slug.current}`}
+            key={project.slug.current}
+            className="block"
+          >
+            {project.mainImage && (
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src={project.mainImage.asset.url}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            )}
+            <h2 className="mt-4 text-xl font-medium">{project.title}</h2>
+          </Link>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
