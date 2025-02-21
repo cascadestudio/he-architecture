@@ -3,18 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function HeroSection({
-  featuredProject,
+  featuredProject: { slug, mainImage, title, projectType },
 }: {
   featuredProject: Project;
 }) {
   return (
-    <section className="mb-16">
-      <Link href={`/project/${featuredProject.slug.current}`}>
+    <section className="lg:pt-7 mb-24 min-h-screen">
+      <Link href={`/project/${slug.current}`}>
         <div className="relative aspect-[350/660] lg:aspect-[1040/740] w-full">
-          {featuredProject.mainImage && (
+          {mainImage && (
             <Image
-              src={featuredProject.mainImage.asset.url}
-              alt={featuredProject.title}
+              src={mainImage.asset.url}
+              alt={title}
               fill
               className="object-cover"
               priority
@@ -22,10 +22,8 @@ export default function HeroSection({
           )}
         </div>
         <div className="mt-4">
-          <h2 className="text-2xl font-medium">{featuredProject.title}</h2>
-          {featuredProject.description && (
-            <p className="mt-2">{featuredProject.description}</p>
-          )}
+          <h2 className="font-bold text-end">{title}</h2>
+          {projectType && <p className="mt-1 text-end">{projectType}</p>}
         </div>
       </Link>
     </section>
