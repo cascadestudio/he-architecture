@@ -18,6 +18,7 @@ export const FEATURED_PROJECT_QUERY = groq`
 export const PROJECTS_QUERY = groq`
   *[_type == "project" && !featured]{
     title,
+    projectType,
     mainImage{
       asset->{
         url

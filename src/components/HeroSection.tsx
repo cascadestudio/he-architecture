@@ -8,15 +8,18 @@ export default function HeroSection({
   featuredProject: Project;
 }) {
   return (
-    <section className="h-[calc(100vh-120px)] mb-24 lg:h-screen lg:pt-7">
-      <Link href={`/project/${slug.current}`} className="h-full block">
-        <div className="relative h-[calc(100%-70px)] lg:h-[calc(100%-85px)]">
+    <section className="grid grid-cols-1 lg:grid-cols-3 gap-[30px] h-[calc(100vh-120px)] mb-24 lg:h-screen lg:pt-7">
+      <Link
+        href={`/project/${slug.current}`}
+        className="h-full block lg:col-span-3 group"
+      >
+        <div className="relative h-[calc(100%-70px)] lg:h-[calc(100%-85px)] overflow-hidden">
           {mainImage && (
             <Image
               src={mainImage.asset.url}
               alt={title}
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-300 ease-out group-hover:scale-[1.02]"
               priority
             />
           )}

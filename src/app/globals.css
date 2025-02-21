@@ -14,3 +14,9 @@ body {
   background: var(--background);
   font-family: var(--font-space-grotesk);
 }
+
+@layer base {
+  html {
+    font-size: 14px;
+  }
+}

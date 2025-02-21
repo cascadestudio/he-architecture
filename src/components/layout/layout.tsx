@@ -20,8 +20,8 @@ export default function ClientLayout({
     <>
       <Header />
       <main className="px-5 pt-[120px] lg:pt-0 lg:px-0 lg:mx-[200px]">
-        <div className="grid grid-cols-1 lg:grid-cols-3">
-          <div className="lg:col-span-3">{children}</div>
+        <div className="">
+          <div className="">{children}</div>
         </div>
       </main>
       <Footer />

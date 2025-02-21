@@ -11,6 +11,7 @@ export default defineType({
       type: "boolean",
       description:
         "Ce projet sera affiché en grand format sur la page d'accueil",
+      initialValue: false,
       validation: (Rule) =>
         Rule.custom((fieldValue, context) => {
           if (!fieldValue) return true;
