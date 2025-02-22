@@ -8,12 +8,12 @@ export default function HeroSection({
   featuredProject: Project;
 }) {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-3 gap-[30px] h-[calc(100vh-120px)] mb-24 lg:h-screen lg:pt-7">
+    <section className="grid grid-cols-1 lg:grid-cols-3 gap-[30px] h-[calc(100vh-120px)] mb-24 lg:pt-7">
       <Link
         href={`/project/${slug.current}`}
         className="h-full block lg:col-span-3 group"
       >
-        <div className="relative h-[calc(100%-70px)] lg:h-[calc(100%-85px)] overflow-hidden">
+        <div className="relative h-[calc(100%-70px)] overflow-hidden">
           {mainImage && (
             <Image
               src={mainImage.asset.url}
