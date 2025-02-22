@@ -65,7 +65,7 @@ export default defineType({
       type: "string",
     }),
     defineField({
-      name: "client",
+      name: "clientName",
       title: "Client",
       type: "string",
     }),

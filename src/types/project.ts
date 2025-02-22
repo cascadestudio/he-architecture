@@ -7,7 +7,7 @@ export interface Project {
   projectType: string;
   description: string;
   city: string;
-  client: string;
+  clientName: string;
   mission: string;
   budget: string;
   mainImage: {
