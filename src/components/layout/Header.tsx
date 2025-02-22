@@ -27,7 +27,7 @@ export default function Header() {
             </div>
           </Link>
           <div className="hidden lg:block lg:mr-[60px]">
-            <Link href="/contact" className="text-2xl font-bold">
+            <Link href="#contact" scroll={true} className="text-2xl font-bold">
               Contact
             </Link>
           </div>

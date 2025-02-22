@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#755C49] h-screen z-50 grid grid-cols-1 lg:grid-cols-3 lg:pl-[200px]">
+    <footer
+      id="contact"
+      className="bg-[#755C49] h-screen z-50 grid grid-cols-1 lg:grid-cols-3 lg:pl-[200px]"
+    >
       <div className="text-[var(--background)] lg:col-span-1 flex items-center">
         <div className="py-[50px] px-5 lg:px-0 lg:py-0">
           <Image
