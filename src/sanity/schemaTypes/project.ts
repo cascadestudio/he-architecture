@@ -6,7 +6,7 @@ import {
 
 export default defineType({
   name: "project",
-  title: "Projet",
+  title: "Projets",
   type: "document",
   orderings: [orderRankOrdering],
   fields: [

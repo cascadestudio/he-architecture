@@ -11,6 +11,7 @@ import { orderableDocumentListDeskItem } from "@sanity/orderable-document-list";
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import { dataset, projectId } from "./src/sanity/env";
 import { schema } from "./src/sanity/schemaTypes";
+import { frFRLocale } from "@sanity/locale-fr-fr";
 
 export default defineConfig({
   basePath: "/studio",
@@ -32,5 +33,6 @@ export default defineConfig({
           ]);
       },
     }),
+    frFRLocale(),
   ],
 });
