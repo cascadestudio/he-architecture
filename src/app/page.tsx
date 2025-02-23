@@ -8,8 +8,8 @@ export default async function Home() {
 
   return (
     <>
-      <HeroSection featuredProject={projects[0]} />
-      <ProjectsSection projects={projects.slice(1)} />
+      <HeroSection featuredProject={projects?.[0]} />
+      <ProjectsSection projects={projects?.slice(1) || []} />
       <AboutSection />
     </>
   );
