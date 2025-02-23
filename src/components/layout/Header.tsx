@@ -22,7 +22,8 @@ export default function Header() {
                 HE Architecture
               </h1>
               <p className="text-lg font-medium">
-                Rénovation <span className="lg:hidden">/</span> Contemporain
+                {/* Rénovation <span className="lg:hidden">/</span> */}
+                Rénovation / Contemporain
               </p>
             </div>
           </Link>
