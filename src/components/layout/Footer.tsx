@@ -32,7 +32,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="relative aspect-square lg:aspect-auto lg:col-span-2">
+      <div className="relative aspect-square lg:aspect-auto lg:col-span-2 self-end lg:self-auto">
         <Image
           src="/agence.jpg"
           alt="Notre agence"
