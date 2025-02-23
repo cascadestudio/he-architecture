@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 p-5 bg-[var(--background)] lg:bg-transparent lg:px-0 lg:py-7 z-40">
+    <header className="fixed top-0 left-0 right-0 p-5 bg-[var(--background)] lg:bg-transparent lg:px-0 lg:py-7 z-20 lg:z-0">
       <nav>
         <div className="flex justify-between items-center lg:items-start">
           <Link
