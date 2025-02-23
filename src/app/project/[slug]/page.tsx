@@ -6,9 +6,7 @@ import Image from "next/image";
 import { GalleryItem } from "@/types/project";
 
 interface ProjectProps {
-  params: Promise<{
-    slug: string;
-  }>;
+  params: Promise<{ slug: string }>;
 }
 
 export default async function ProjectPage({ params }: ProjectProps) {
@@ -33,7 +31,7 @@ export default async function ProjectPage({ params }: ProjectProps) {
   } = project;
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px] mb-24 lg:pt-7">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-[30px] mb-24 lg:pt-7">
       <div className="col-span-full mb-8 lg:mb-[80px]">
         {mainImage && (
           <Image
@@ -52,7 +50,7 @@ export default async function ProjectPage({ params }: ProjectProps) {
         </h2>
         <p className="text-lg lg:text-2xl mb-12 lg:mb-10">{projectType}</p>
       </div>
-      <div className="col-span-full lg:col-span-1 grid grid-cols-2 gap-y-5 mb-20 lg:flex lg:flex-col lg:text-end">
+      <div className="col-span-full row-span-2 lg:col-span-1 grid grid-cols-2 gap-y-5 mb-20 lg:mb-0 lg:flex lg:flex-col lg:text-end">
         <div>
           <p>Ville</p>
           <p className="font-bold">{city}</p>
