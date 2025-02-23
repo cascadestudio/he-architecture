@@ -12,29 +12,6 @@ export default defineType({
   fields: [
     orderRankField({ type: "project" }),
     defineField({
-      name: "featured",
-      title: "Projet phare",
-      type: "boolean",
-      description:
-        "Ce projet sera affiché en grand format sur la page d'accueil",
-      initialValue: false,
-      validation: (Rule) =>
-        Rule.custom((fieldValue, context) => {
-          if (!fieldValue) return true;
-
-          return context
-            .getClient({ apiVersion: "2024-03-20" })
-            .fetch(`*[_type == "project" && featured == true && _id != $id]`, {
-              id: (context.document as any)._id,
-            })
-            .then(
-              (documents) =>
-                documents.length === 0 ||
-                "Un seul projet peut être mis en avant"
-            );
-        }),
-    }),
-    defineField({
       name: "mainImage",
       title: "Image principale",
       type: "image",
