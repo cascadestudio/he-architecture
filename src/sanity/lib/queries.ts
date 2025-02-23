@@ -16,7 +16,7 @@ export const FEATURED_PROJECT_QUERY = groq`
 `;
 
 export const PROJECTS_QUERY = groq`
-  *[_type == "project" && !featured]{
+  *[_type == "project" && !featured] | order(orderRank) {
     title,
     projectType,
     mainImage{

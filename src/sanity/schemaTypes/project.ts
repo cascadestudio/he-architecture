@@ -1,10 +1,16 @@
 import { defineField, defineType } from "sanity";
+import {
+  orderRankField,
+  orderRankOrdering,
+} from "@sanity/orderable-document-list";
 
 export default defineType({
   name: "project",
   title: "Projet",
   type: "document",
+  orderings: [orderRankOrdering],
   fields: [
+    orderRankField({ type: "project" }),
     defineField({
       name: "featured",
       title: "Projet phare",
@@ -34,19 +40,12 @@ export default defineType({
       type: "image",
       options: { hotspot: true },
     }),
-    defineField({
-      name: "title",
-      title: "Titre",
-      type: "string",
-    }),
+    defineField({ name: "title", title: "Titre", type: "string" }),
     defineField({
       name: "slug",
       title: "Slug",
       type: "slug",
-      options: {
-        source: "title",
-        maxLength: 96,
-      },
+      options: { source: "title", maxLength: 96 },
     }),
 
     defineField({
@@ -54,31 +53,11 @@ export default defineType({
       title: "Type de projet",
       type: "string",
     }),
-    defineField({
-      name: "description",
-      title: "Description",
-      type: "text",
-    }),
-    defineField({
-      name: "city",
-      title: "Ville",
-      type: "string",
-    }),
-    defineField({
-      name: "clientName",
-      title: "Client",
-      type: "string",
-    }),
-    defineField({
-      name: "mission",
-      title: "Mission",
-      type: "string",
-    }),
-    defineField({
-      name: "budget",
-      title: "Budget",
-      type: "string",
-    }),
+    defineField({ name: "description", title: "Description", type: "text" }),
+    defineField({ name: "city", title: "Ville", type: "string" }),
+    defineField({ name: "clientName", title: "Client", type: "string" }),
+    defineField({ name: "mission", title: "Mission", type: "string" }),
+    defineField({ name: "budget", title: "Budget", type: "string" }),
     defineField({
       name: "gallery",
       title: "Galerie d'images",
@@ -100,12 +79,7 @@ export default defineType({
               description: "Optionnelle",
             },
           ],
-          preview: {
-            select: {
-              title: "caption",
-              media: "image",
-            },
-          },
+          preview: { select: { title: "caption", media: "image" } },
         },
       ],
     }),
