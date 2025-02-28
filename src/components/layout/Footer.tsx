@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -18,15 +19,35 @@ export default function Footer() {
           <div className="space-y-6 lg:max-w-[160px] max-w-none">
             <h3 className="font-bold">HE Architecture</h3>
             <div>
-              <p>+33 (0) 6 32 15 10 89</p>
+              <p>
+                <Link href="tel:+33632151089">+33 (0) 6 32 15 10 89</Link>
+              </p>
               <br />
-              <p>elsa@hearchitecture.fr</p>
+              <p>
+                <Link href="mailto:elsa@hearchitecture.fr">
+                  elsa@hearchitecture.fr
+                </Link>
+              </p>
               <br />
-              <p>@he__architecture</p>
+              <p>
+                <Link
+                  href="https://www.instagram.com/he__architecture"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @he__architecture
+                </Link>
+              </p>
             </div>
             <div>
-              <p>25, avenue de la Croix du Capitaine</p>
-              <p>34070 Montpellier</p>
+              <Link
+                href="https://www.google.com/maps/search/?api=1&query=25+avenue+de+la+Croix+du+Capitaine+34070+Montpellier+France"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p>25, avenue de la Croix du Capitaine</p>
+                <p>34070 Montpellier</p>
+              </Link>
             </div>
           </div>
         </div>
