@@ -39,13 +39,9 @@ export default function ProjectsSection({ projects }: { projects: Project[] }) {
         <div className="flex justify-center lg:mt-[80px]">
           <button
             onClick={() => setIsShowAll(!isShowAll)}
-            className="text-4xl font-bold w-10 h-10 rounded-full border-2 border-current flex justify-center"
+            className="font-bold px-4 py-2 rounded-full border-2 border-current flex justify-center"
           >
-            {isShowAll ? (
-              <span className="relative bottom-[4px]">{"-"}</span>
-            ) : (
-              <span className="relative bottom-[1px]">{"+"}</span>
-            )}
+            {isShowAll ? "Voir moins" : "Voir plus de projets"}
           </button>
         </div>
       )}

@@ -28,13 +28,22 @@ export default defineType({
     defineField({
       name: "projectType",
       title: "Type de projet",
+      description: "Exemple : 'Réhabilitation de l'ensemble du bâtiment'",
       type: "string",
     }),
     defineField({ name: "description", title: "Description", type: "text" }),
+    defineField({
+      name: "clientName",
+      title: "Maître d'ouvrage",
+      type: "string",
+    }),
     defineField({ name: "city", title: "Ville", type: "string" }),
-    defineField({ name: "clientName", title: "Client", type: "string" }),
     defineField({ name: "mission", title: "Mission", type: "string" }),
-    defineField({ name: "budget", title: "Budget", type: "string" }),
+    defineField({
+      name: "budget",
+      title: "Montant des travaux",
+      type: "string",
+    }),
     defineField({
       name: "gallery",
       title: "Galerie d'images",
