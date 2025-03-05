@@ -5,7 +5,7 @@ export default function MentionsLegales() {
 
       <p className="mb-6">
         Le site est édité par HE ARCHITECTURE, une société à responsabilité
-        limitée au capital de 1 000 EURO S, immatriculée au Registre du Commerce
+        limitée au capital de 1 000 EUROS, immatriculée au Registre du Commerce
         et des Sociétés de Montpellier sous le numéro 2019B00722, avec un numéro
         de TVA intracommunautaire FR59848571568. Le siège social est situé au
         25, avenue de la Croix du Capitaine, 34070 Montpellier. Vous pouvez nous
