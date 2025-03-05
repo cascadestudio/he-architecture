@@ -5,10 +5,10 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="bg-[#755C49] h-screen z-20 grid grid-cols-1 lg:grid-cols-3 lg:pl-[200px]"
+      className="bg-[#755C49] h-screen z-20 grid grid-cols-1 lg:grid-cols-3 lg:pl-[200px] relative"
     >
-      <div className="text-[var(--background)] lg:col-span-1 flex items-center">
-        <div className="py-[50px] px-5 lg:px-0 lg:py-0">
+      <div className="text-[var(--background)] lg:col-span-1 flex items-center relative w-full">
+        <div className="py-[50px] px-5 lg:px-0 lg:py-0 w-full">
           <Image
             src="/logo-white.svg"
             alt="HE Architecture"
@@ -18,37 +18,70 @@ export default function Footer() {
           />
           <div className="space-y-6 lg:max-w-[160px] max-w-none">
             <h3 className="font-bold">HE Architecture</h3>
-            <div>
-              <p>
-                <Link href="tel:+33632151089">+33 (0) 6 32 15 10 89</Link>
-              </p>
-              <br />
-              <p>
-                <Link href="mailto:elsa@hearchitecture.fr">
-                  elsa@hearchitecture.fr
-                </Link>
-              </p>
-              <br />
-              <p>
-                <Link
-                  href="https://www.instagram.com/he__architecture"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  @he__architecture
-                </Link>
-              </p>
-            </div>
+            <Link href="tel:+33632151089">+33 (0) 6 32 15 10 89</Link>
+            <br />
+            <Link href="mailto:elsa@hearchitecture.fr">
+              elsa@hearchitecture.fr
+            </Link>
+            <br />
+            <Link
+              href="https://www.instagram.com/he__architecture"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @he__architecture
+            </Link>
+            <br />
             <div>
               <Link
                 href="https://www.google.com/maps/search/?api=1&query=25+avenue+de+la+Croix+du+Capitaine+34070+Montpellier+France"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p>25, avenue de la Croix du Capitaine</p>
-                <p>34070 Montpellier</p>
+                25, avenue de la Croix du Capitaine
+                <br />
+                34070 Montpellier
               </Link>
             </div>
+          </div>
+
+          <div className="block lg:hidden text-[var(--background)] text-xs mt-16 w-full">
+            <Link href="/mentions-legales" className="block mb-2">
+              Mentions légales
+            </Link>
+            <div className="flex justify-between">
+              <p>HE Architecture © 2025</p>
+              <p>
+                Site réalisé par{" "}
+                <Link
+                  href="https://www.cascadestudio.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  le studio Cascade
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop-only footer text */}
+        <div className="hidden lg:block absolute bottom-8 left-0 text-[var(--background)] text-xs w-full pr-8">
+          <Link href="/mentions-legales" className="block mb-2">
+            Mentions légales
+          </Link>
+          <div className="w-full flex justify-between">
+            <p>HE Architecture © 2025</p>
+            <p>
+              Site réalisé par{" "}
+              <Link
+                href="https://www.cascadestudio.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                le studio Cascade
+              </Link>
+            </p>
           </div>
         </div>
       </div>
