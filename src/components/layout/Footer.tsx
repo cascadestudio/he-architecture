@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="bg-[#755C49] h-screen z-20 grid grid-cols-1 lg:grid-cols-3 lg:gap-8 lg:px-[200px] relative"
+      className="bg-[#755C49] h-screen z-20 grid grid-cols-1 lg:grid-cols-3 lg:gap-8 lg:px-[200px] relative overflow-hidden"
     >
       <div className="text-[var(--background)] lg:col-span-1 flex items-center relative w-full">
         <div className="pt-[50px] pb-[15px] px-5 lg:px-0 lg:py-0 w-full">
