@@ -5,10 +5,10 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="bg-[#755C49] h-screen z-20 grid grid-cols-1 lg:grid-cols-3 lg:pl-[200px] relative"
+      className="bg-[#755C49] h-screen z-20 grid grid-cols-1 lg:grid-cols-3 lg:gap-8 lg:px-[200px] relative"
     >
       <div className="text-[var(--background)] lg:col-span-1 flex items-center relative w-full">
-        <div className="py-[50px] px-5 lg:px-0 lg:py-0 w-full">
+        <div className="pt-[50px] pb-[15px] px-5 lg:px-0 lg:py-0 w-full">
           <Image
             src="/logo-white.svg"
             alt="HE Architecture"
@@ -66,7 +66,7 @@ export default function Footer() {
         </div>
 
         {/* Desktop-only footer text */}
-        <div className="hidden lg:block absolute bottom-8 left-0 text-[var(--background)] text-xs w-full pr-8">
+        <div className="hidden lg:block absolute bottom-8 left-0 text-[var(--background)] text-xs w-full">
           <Link href="/mentions-legales" className="block mb-2">
             Mentions légales
           </Link>
@@ -86,7 +86,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="relative aspect-square lg:aspect-auto lg:col-span-2 self-end lg:self-auto">
+      <div className="relative aspect-square lg:aspect-auto lg:col-span-2 self-end lg:self-auto lg:mr-[-200px]">
         <Image
           src="/agence.jpg"
           alt="Notre agence"
