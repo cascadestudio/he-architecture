@@ -51,11 +51,11 @@ export default async function ProjectPage({ params }: ProjectProps) {
         <p className="text-lg lg:text-2xl mb-12 lg:mb-10">{projectType}</p>
       </div>
       <div className="col-span-full row-span-2 lg:col-span-1 grid grid-cols-2 gap-y-5 mb-20 lg:mb-0 lg:flex lg:flex-col lg:text-end">
-        <div className="text-end">
+        <div>
           <p>Maître d’ouvrage</p>
           <p className="font-bold">{clientName}</p>
         </div>
-        <div>
+        <div className="text-end">
           <p>Ville</p>
           <p className="font-bold">{city}</p>
         </div>
