@@ -25,36 +25,34 @@ export default function AboutSection() {
 
           <div className="space-y-6">
             <p>
-              L'agence développe une approche transversale nourrie de
-              l'entrecroisement des regards et des disciplines, en faisant
-              dialoguer l'architecture, l'architecture d'intérieur, le design et
-              l'art contemporain tout en élaborant un art de concevoir et de
-              construire ouvert à toutes les échelles et les typologies
-              d'espaces.
+              L’agence HE Architecture développe une approche transversale
+              faisant dialoguer l’architecture, l’architecture d’intérieur, le
+              design et l’art contemporain. Depuis 2018, elle conçoit des
+              projets à grande et plus petite échelle, de l’habitation privée au
+              tertiaire, l’immeuble collectif et de grand établissement
+              d’enseignement. Elle accompagne chaque étape du processus, de la
+              conception initiale à la réalisation finale. L’approche est
+              globale et précise : règlementation urbaine, incendie, ERP,
+              acoustique, thermique, accessibilité…Son engagement à tous les
+              niveaux de création est de redonner du souffle au patrimoine bâti
+              dans le respect de l’existant. L’objectif étant de penser des
+              espaces de vie et de travail pour aujourd’hui et demain.
             </p>
 
             <p>
-              Dès sa première réalisation d'une rénovation imposante, le Lycée
-              Notre Dame de la Merci ( 2019-2023, 7000 m2) dans le centre
-              historique de Montpellier, les interventions de l'agence
-              s'inscrivent dans une recherche de durabilité en réponse aux
-              besoins de tous les usagers. Loin de toute écriture formelle, il
-              s'agit d'une architecture minimale dans son esthétique, maximale
-              dans son fonctionnalisme décuplé et sa qualité environnementale
-              revendiquant un postulat du retour au « bon sens ».
-            </p>
-
-            <p>
-              En adossant à ses compétences un bureau d'ingénierie dédié, HE
-              ARCHITECTURE affirme sa volonté d'emprunter de nouvelles voies.
-            </p>
-
-            <p>
-              Qu'il s'agisse de commandes publiques ou privées, l'engagement de
-              l'agence et celui de concepteur- bâtisseur à tous les niveaux de
-              création. Ce faisant il s'agit bien de redonner du souffle au
-              patrimoine bâti - dans le respect de l'existant - des espaces de
-              vie et de travail pour aujourd'hui et demain.
+              Après quelques jeunes expériences au sein d’agences comme
+              architecte sur des typologies de projets variées et complexes,
+              Elsa développe sa propre entreprise. Cheffe d’entreprise, son
+              approche repose sur la qualité de la relation avec les
+              interlocuteurs pour mener à bien des projets exigeants avec
+              sensibilité, engagement et rigueur. Tout est conçu avec et pour
+              l’utilisateur final, afin de lui permettre d’évoluer dans un cadre
+              de vie et de travail de qualité, confortable et harmonieux. Elsa
+              associe sa créativité à son savoir-faire et s’appuie sur les
+              compétences techniques d’un réseau solide d’artisans. Pour
+              réaliser des projets pertinents et maîtrisés, elle collabore
+              étroitement avec un bureau d’étude structure dédié et intégré à
+              l’agence.
             </p>
           </div>
         </div>
