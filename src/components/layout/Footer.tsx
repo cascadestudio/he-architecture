@@ -71,7 +71,7 @@ export default function Footer() {
             Mentions légales
           </Link>
           <div className="w-full flex justify-between">
-            <p>HE Architecture © 2025</p>
+            <p>HE Architecture © {new Date().getFullYear()}</p>
             <p>
               Site réalisé par{" "}
               <Link
