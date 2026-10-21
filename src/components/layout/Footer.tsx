@@ -54,9 +54,9 @@ export default function Footer() {
               <p>
                 Site réalisé par{" "}
                 <Link
-                  href="https://www.cascadestudio.fr/"
+                  href="https://www.cascadestudio.fr/credit/he-architecture"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                 >
                   le studio Cascade
                 </Link>
@@ -75,9 +75,9 @@ export default function Footer() {
             <p>
               Site réalisé par{" "}
               <Link
-                href="https://www.cascadestudio.fr/"
+                href="https://www.cascadestudio.fr/credit/he-architecture"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
               >
                 le studio Cascade
               </Link>
